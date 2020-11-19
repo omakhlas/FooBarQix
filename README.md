@@ -1,5 +1,7 @@
 # FizzBuzz
 
+[![Build Status](https://travis-ci.org/omakhlas/FooBarQix.svg?branch=master)](https://travis-ci.org/omakhlas/FooBarQix)
+
 About this Kata
 
 This Kata was posted here by someone anonymously. Michael Feathers and EmilyBache performed it at agile2008 when competing in “Programming with the stars” in python, in 4 minutes.
