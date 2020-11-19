@@ -24,6 +24,10 @@ public class FooBarQixTest {
     public void shouldReturnFooFooWhenNumberIs3() {
         assertEquals("FooFoo", fooBarQix.printValue("3"));
     }
+    @Test
+    public void shouldReturnBarBarWhenNumberIs5() {
+        assertEquals("BarBar", fooBarQix.printValue("5"));
+    }
 
 
 }

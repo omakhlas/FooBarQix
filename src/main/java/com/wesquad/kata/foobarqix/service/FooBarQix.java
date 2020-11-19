@@ -2,8 +2,15 @@ package com.wesquad.kata.foobarqix.service;
 
 public class FooBarQix {
     public String printValue(String val) {
-        if(val.contains("3") && Integer.parseInt(val)%3 == 0) return "FooFoo";
-        if(val.equals("1")) return "1";
-        return "2";
+        if(Integer.parseInt(val)%3 == 0) {
+            if (val.contains("3")) return "FooFoo";
+            else return "Foo";
+        }
+        if(Integer.parseInt(val)%5 == 0) {
+            if (val.contains("5")) return "BarBar";
+            else return "Bar";
+        }
+        return val;
     }
+
 }
