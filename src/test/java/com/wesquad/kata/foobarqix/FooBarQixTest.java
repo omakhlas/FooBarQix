@@ -29,5 +29,19 @@ public class FooBarQixTest {
         assertEquals("BarBar", fooBarQix.printValue("5"));
     }
 
+    @Test
+    public void shouldReturnFooWhenNumberIs6() {
+        assertEquals("Foo", fooBarQix.printValue("6"));
+    }
+
+    @Test
+    public void shouldReturnFooWhenNumberIs13() {
+        assertEquals("Foo", fooBarQix.printValue("13"));
+    }
+    @Test
+    public void shouldReturnFooBarBarWhenNumberIs15() {
+        assertEquals("FooBarBar", fooBarQix.printValue("15"));
+    }
+
 
 }
