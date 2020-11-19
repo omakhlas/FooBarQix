@@ -13,16 +13,28 @@ public class FooBarQix {
             sb.append("Qix");
         }
         if(val.contains("3")) {
-            sb.append("Foo");
+            int a = count(val)[3];
+            while(a-->0)
+                sb.append("Foo");
         }
         if(val.contains("5")) {
-            sb.append("Bar");
+            int a = count(val)[5];
+            while(a-->0)
+                sb.append("Bar");
         }
         if(val.contains("7")) {
-            sb.append("Qix");
+            int a = count(val)[7];
+            while(a-->0)
+                sb.append("Qix");
         }
         if(sb.length() != 0) return sb.toString();
         return val;
+    }
+
+    public int[] count(String s) {
+        int[] arr = new int[26];
+        for(char c : s.toCharArray()) arr[c-'0']++;
+        return arr;
     }
 
 }
