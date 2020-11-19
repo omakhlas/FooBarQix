@@ -58,4 +58,24 @@ public class FooBarQixTest {
         assertEquals("FooBar", fooBarQix.printValue("51"));
     }
 
+    @Test
+    public void shouldReturnFooFooFooWhenNumberIs303() {
+        assertEquals("FooFoo*Foo", fooBarQix.printValue("303"));
+    }
+
+    //* is replaced by _ on the test name
+    @Test
+    public void shouldReturnFooQix__WhenNumberIs10101() {
+        assertEquals("FooQix**", fooBarQix.printValue("10101"));
+    }
+
+    @Test
+    public void shouldReturn1_1WhenNumberIs101() {
+        assertEquals("1*1", fooBarQix.printValue("101"));
+    }
+
+    @Test
+    public void shouldReturnFooBarQix_BarWhenNumberIs101() {
+        assertEquals("FooBarQix*Bar", fooBarQix.printValue("105"));
+    }
 }
